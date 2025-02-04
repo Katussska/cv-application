@@ -32,5 +32,8 @@ Here’s what the project entails:
 
 ## 🌐 Links
 
+- [Live Demo](https://github.com/Katussska/cv-application): Access the live version of the project.
+- [Assignment](https://www.theodinproject.com/lessons/node-path-react-new-cv-application#assignment): View the project requirements.
 - [The Odin Project](https://www.theodinproject.com/): Explore the curriculum and courses.
 - [Color Palette](https://www.realtimecolors.com/?colors=e9e8f9-03030a-adacc4-604764-a784a1&fonts=Stick%20No%20Bills-Stick%20No%20Bills): Access the color palette used in the project.
+- [Inspiration](https://wekiban.github.io/CV_App/?school=&location=&from=&to=&qualification=&achievements=&school=&location=&from=&to=&qualification=&achievements=): Check out the inspiration for the project.
