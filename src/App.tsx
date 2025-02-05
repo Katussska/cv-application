@@ -1,47 +1,17 @@
 import './App.css'
-import {Eye, Moon, Pencil, Printer, Sun} from 'lucide-react';
-import {useEffect, useState} from "react";
+import Sidebar from "./components/Sidebar.tsx";
+import { EditingProvider } from "./components/EditingContext.tsx";
+import CVContainer from "./components/CVContainer.tsx"; // Import EditingProvider
 
 function App() {
-    const [theme, setTheme] = useState('light');
-    const [isEditing, setIsEditing] = useState(true);
-
-    useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme);
-    }, [theme]);
-
-    const toggleTheme = () => {
-        setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
-    };
-
-    const toggleEditing = () => {
-        setIsEditing(prevIsEditing => !prevIsEditing);
-    }
-
     return (
-        <div className="container">
-            <nav>
-                <h1>CV Maker</h1>
-                <div className="functionsContainer">
-                    {!isEditing && (
-                        <>
-                            <Pencil onClick={toggleEditing}/>
-                            <Printer/>
-                        </>
-                    )}
-                    {isEditing && <Eye onClick={toggleEditing}/>}
-                    {theme === 'light' ? (
-                        <Sun onClick={toggleTheme}/>
-                    ) : (
-                        <Moon onClick={toggleTheme}/>
-                    )}
-                </div>
-            </nav>
-            <div className="cvContainer">
-                CV
+        <EditingProvider>
+            <div className="container">
+                <Sidebar />
+                <CVContainer />
             </div>
-        </div>
-    )
+        </EditingProvider>
+    );
 }
 
-export default App
+export default App;

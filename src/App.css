@@ -15,10 +15,9 @@ nav {
 
 .functionsContainer {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    width: 10vh;
 }
 
 .cvContainer {
@@ -28,4 +27,49 @@ nav {
     max-width: calc(90vh / 1.414);
     background: var(--background);
     box-shadow: black 0px 0px 10px;
+}
+
+.generalInformationContainer{
+    background: red;
+    width: 100%;
+    height: 20%;
+}
+
+.cvContent{
+    display: flex;
+    width: 100%;
+    height: 80%;
+}
+
+.cvLeft {
+    width: 70%;
+    height: 100%;
+    background: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.educationContainer{
+    width: 100%;
+    height: 50%;
+    background: yellow;
+}
+
+.experienceContainer{
+    width: 100%;
+    height: 50%;
+    background: pink;
+}
+
+.cvRight {
+    width: 30%;
+    height: 100%;
+    background: green;
+}
+
+.skillsContainer{
+    width: 100%;
+    height: 100%;
+    background: orange;
 }
