@@ -1,0 +1,31 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.functionsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.cvContainer {
+    width: 90vw;
+    aspect-ratio: 1 / 1.414;
+    max-height: 90vh;
+    max-width: calc(90vh / 1.414);
+    background: var(--background);
+    box-shadow: black 0px 0px 10px;
+}
