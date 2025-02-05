@@ -26,16 +26,52 @@ nav {
     max-height: 90vh;
     max-width: calc(90vh / 1.414);
     background: var(--background);
-    box-shadow: black 0px 0px 10px;
+    box-shadow: black 0 0 10px;
 }
 
-.generalInformationContainer{
-    background: red;
+.generalInformationContainer {
     width: 100%;
     height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--accent);
 }
 
-.cvContent{
+.name {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.icon {
+    color: var(--accent);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item p {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.cvContent {
     display: flex;
     width: 100%;
     height: 80%;
@@ -44,32 +80,49 @@ nav {
 .cvLeft {
     width: 70%;
     height: 100%;
-    background: blue;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.educationContainer{
+.educationContainer {
     width: 100%;
     height: 50%;
-    background: yellow;
 }
 
-.experienceContainer{
+.experienceContainer {
     width: 100%;
     height: 50%;
-    background: pink;
 }
 
 .cvRight {
     width: 30%;
     height: 100%;
-    background: green;
 }
 
-.skillsContainer{
+.skillsContainer {
     width: 100%;
     height: 100%;
-    background: orange;
+    border-left: 2px solid var(--accent);
+}
+
+.skills {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4 {
+    margin: 15px;
+}
+
+.skillsContainer .item {
+    margin: 5px;
+}
+
+.skillsContainer .item p {
+    font-size: 12px;
 }

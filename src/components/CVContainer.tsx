@@ -1,19 +1,19 @@
 import GeneralInformation from "./GeneralInformation.tsx";
 import Education from "./Education.tsx";
 import Experience from "./Experience.tsx";
-import Skills from "./Skills.tsx";
+import SkillList from "./SkillList.tsx";
 
 export default function CVContainer() {
     return (
         <div className="cvContainer">
-            <GeneralInformation />
+            <GeneralInformation/>
             <div className="cvContent">
                 <div className="cvLeft">
                     <Education/>
                     <Experience/>
                 </div>
                 <div className="cvRight">
-                    <Skills/>
+                    <SkillList/>
                 </div>
             </div>
         </div>
