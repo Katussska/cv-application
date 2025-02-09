@@ -1,10 +1,10 @@
-import { Eye, Pencil, Printer, Sun, Moon } from "lucide-react";
-import { useState, useEffect } from "react";
-import { useEditing } from "./EditingContext.tsx"; // Import useEditing
+import {Eye, Moon, Pencil, Printer, Sun} from "lucide-react";
+import {useEffect, useState} from "react";
+import {useEditing} from "./EditingContext.tsx";
 
 export default function Sidebar() {
     const [theme, setTheme] = useState('light');
-    const { isEditing, toggleEditing } = useEditing(); // Použití sdíleného stavu
+    const {isEditing, toggleEditing} = useEditing();
 
     useEffect(() => {
         document.documentElement.setAttribute('data-theme', theme);
@@ -20,15 +20,15 @@ export default function Sidebar() {
             <div className="functionsContainer">
                 {!isEditing && (
                     <>
-                        <Pencil onClick={toggleEditing} />
-                        <Printer />
+                        <Pencil onClick={toggleEditing}/>
+                        <Printer/>
                     </>
                 )}
-                {isEditing && <Eye onClick={toggleEditing} />}
+                {isEditing && <Eye onClick={toggleEditing}/>}
                 {theme === 'light' ? (
-                    <Sun onClick={toggleTheme} />
+                    <Sun onClick={toggleTheme}/>
                 ) : (
-                    <Moon onClick={toggleTheme} />
+                    <Moon onClick={toggleTheme}/>
                 )}
             </div>
         </nav>

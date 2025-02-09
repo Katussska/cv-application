@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Phoenician:wght@400&family=Noto+Naskh+Arabic:wght@700&display=swap');
 
-* {margin: 0; padding: 0;}
+* {
+    margin: 0;
+    padding: 0;
+}
 
 :root[data-theme="light"] {
     --text: #060618;
@@ -19,15 +22,14 @@
 }
 
 body {
-    font-family: 'Noto Sans Phoenician';
     font-weight: 400;
     background: var(--secondary);
     color: var(--text);
 }
 
-h1, h2, h3, h4, h5{
-    font-family: 'Noto Naskh Arabic';
+h1, h2, h3, h4, h5 {
     font-weight: 700;
+    text-align: center;
 }
 
 html {
